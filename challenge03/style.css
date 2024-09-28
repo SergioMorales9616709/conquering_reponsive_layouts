@@ -14,55 +14,65 @@
  *
  */
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+} 
+
+.hero__text{
+  max-width: 60%;
 }
 
 .container {
-  width: 80%;
-  max-width: 950px;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 50px;  
 }
 
-.container div {
-  margin-bottom: 8rem;
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.bg-blue{
-  background: #23424a;
-  color: white;
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.intro-content {
-  width: 65%;
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.intro-content h1 {
-  font-family: roboto-black;
-  font-size: 3rem;
-  font-weight: bold;
+.hero__text p {
+  margin-bottom: 3em;
 }
 
-.intro-content p {
-  font-family: roboto-regular;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-.cta a{
-  padding: 1.1em 1.8em;
-  background-color: #38cfd9;
-  color: black;
+.btn {
+  font-size: 1.8rem;
+  display: inline-block;
   text-decoration: none;
-  font-size: 1.5rem;
-  text-transform: uppercase;  
-  font-weight: bold;
-  border-radius: 2.5rem;
+  text-transform: uppercase;
+  color: #23424a;
+  background-color: #38cfd9;
+  padding: .975em 1.521em;
+  border-radius: 100px;
 }
