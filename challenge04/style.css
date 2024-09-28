@@ -45,6 +45,7 @@ h1 {
 
     /* can't use yet */
     /* gap: 100px; */
+    padding-block: 3em;
 }
 
 .col {
@@ -53,17 +54,20 @@ h1 {
 }
 
 .hero {
-    padding: 100px 0;
-    background-color: #23424A;
+    padding: 100px 0;    
+}
+
+.bg-dark-blue {
     color: #FFF;
+    background-color: #23424A;
 }
 
 .hero__text {
     width: 60%;
 }
 
-.hero p {
-    margin-bottom: 3em;
+.three-cols h2 {
+    color: #87629A;
 }
 
 .btn {
@@ -76,6 +80,21 @@ h1 {
     padding: .75em 2em;
     border-radius: 100px;
 }
+
+.col + .col {
+    margin-inline-start: 1rem;
+}
+
+.col{
+    text-align: center;
+}
+
+.footer {
+    padding-block: 4rem;
+    background-color: #136C72;
+    color: #FFF;
+}
+
 
 .btn:hover,
 .btn:focus {
